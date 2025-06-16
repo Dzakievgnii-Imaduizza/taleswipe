@@ -9,10 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ReportResponse {
-    private String reportId;
-    private String jenisLaporan;
-    private String reportText;
-    private String senderUsername;
-    private String contentId;
+public class CommentRequest {
+    private String storyId;
+    private String commentText;
+    private String parentCommentId;
 } 
