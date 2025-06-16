@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.PBO.TaleSwipe.DemoApplicationTests" time="7.677" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\kuliah\semester 4\PBO\tubes\TaleSwipe_BE\demo\target\test-classes;D:\kuliah\semester 4\PBO\tubes\TaleSwipe_BE\demo\target\classes;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.5.0\spring-boot-starter-data-jpa-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter\3.5.0\spring-boot-starter-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.5.0\spring-boot-starter-logging-3.5.0.jar;C:\Users\IRHAM\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\IRHAM\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\IRHAM\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\IRHAM\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\IRHAM\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\IRHAM\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\IRHAM\.m2\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.0\spring-boot-starter-jdbc-3.5.0.jar;C:\Users\IRHAM\.m2\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-jdbc\6.2.7\spring-jdbc-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\hibernate\orm\hibernate-core\6.6.15.Final\hibernate-core-6.6.15.Final.jar;C:\Users\IRHAM\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\IRHAM\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\IRHAM\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\IRHAM\.m2\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Users\IRHAM\.m2\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\IRHAM\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\Users\IRHAM\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\IRHAM\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\IRHAM\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\IRHAM\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\IRHAM\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\IRHAM\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\IRHAM\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\data\spring-data-jpa\3.5.0\spring-data-jpa-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\data\spring-data-commons\3.5.0\spring-data-commons-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-orm\6.2.7\spring-orm-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-context\6.2.7\spring-context-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-tx\6.2.7\spring-tx-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-beans\6.2.7\spring-beans-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-aspects\6.2.7\spring-aspects-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\aspectj\aspectjweaver\1.9.24\aspectjweaver-1.9.24.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.5.0\spring-boot-starter-thymeleaf-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.3.RELEASE\thymeleaf-spring6-3.1.3.RELEASE.jar;C:\Users\IRHAM\.m2\repository\org\thymeleaf\thymeleaf\3.1.3.RELEASE\thymeleaf-3.1.3.RELEASE.jar;C:\Users\IRHAM\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\IRHAM\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.5.0\spring-boot-starter-security-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-aop\6.2.7\spring-aop-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-config\6.5.0\spring-security-config-6.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-web\6.5.0\spring-security-web-6.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-expression\6.2.7\spring-expression-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.5.0\spring-boot-starter-validation-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.41\tomcat-embed-el-10.1.41.jar;C:\Users\IRHAM\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.2.Final\hibernate-validator-8.0.2.Final.jar;C:\Users\IRHAM\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.5.0\spring-boot-starter-web-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.5.0\spring-boot-starter-json-3.5.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.19.0\jackson-datatype-jdk8-2.19.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.19.0\jackson-datatype-jsr310-2.19.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.19.0\jackson-module-parameter-names-2.19.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.0\spring-boot-starter-tomcat-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.41\tomcat-embed-core-10.1.41.jar;C:\Users\IRHAM\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.41\tomcat-embed-websocket-10.1.41.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-web\6.2.7\spring-web-6.2.7.jar;C:\Users\IRHAM\.m2\repository\io\micrometer\micrometer-observation\1.15.0\micrometer-observation-1.15.0.jar;C:\Users\IRHAM\.m2\repository\io\micrometer\micrometer-commons\1.15.0\micrometer-commons-1.15.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-webmvc\6.2.7\spring-webmvc-6.2.7.jar;C:\Users\IRHAM\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\IRHAM\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\IRHAM\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.0\jackson-databind-2.19.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.0\jackson-annotations-2.19.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.0\jackson-core-2.19.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-devtools\3.5.0\spring-boot-devtools-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot\3.5.0\spring-boot-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.0\spring-boot-autoconfigure-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\postgresql\postgresql\42.7.5\postgresql-42.7.5.jar;C:\Users\IRHAM\.m2\repository\org\checkerframework\checker-qual\3.48.3\checker-qual-3.48.3.jar;C:\Users\IRHAM\.m2\repository\org\projectlombok\lombok\1.18.38\lombok-1.18.38.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.5.0\spring-boot-starter-test-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-test\3.5.0\spring-boot-test-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.0\spring-boot-test-autoconfigure-3.5.0.jar;C:\Users\IRHAM\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\IRHAM\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\IRHAM\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\IRHAM\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\IRHAM\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\IRHAM\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\IRHAM\.m2\repository\org\assertj\assertj-core\3.27.3\assertj-core-3.27.3.jar;C:\Users\IRHAM\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\IRHAM\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\IRHAM\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\IRHAM\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\IRHAM\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\IRHAM\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\IRHAM\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\IRHAM\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\IRHAM\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\IRHAM\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Users\IRHAM\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Users\IRHAM\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.5\byte-buddy-agent-1.17.5.jar;C:\Users\IRHAM\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\IRHAM\.m2\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Users\IRHAM\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\IRHAM\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-core\6.2.7\spring-core-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-jcl\6.2.7\spring-jcl-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-test\6.2.7\spring-test-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\xmlunit\xmlunit-core\2.10.1\xmlunit-core-2.10.1.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-test\6.5.0\spring-security-test-6.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-core\6.5.0\spring-security-core-6.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-crypto\6.5.0\spring-security-crypto-6.5.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="APPLICATION_NAME" value="taleswipe"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\IRHAM\AppData\Local\Temp\surefire9942462447523452072\surefirebooter-20250615063249334_3.jar C:\Users\IRHAM\AppData\Local\Temp\surefire9942462447523452072 2025-06-15T06-32-49_165-jvmRun1 surefire-20250615063249334_1tmp surefire_0-20250615063249334_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\kuliah\semester 4\PBO\tubes\TaleSwipe_BE\demo\target\test-classes;D:\kuliah\semester 4\PBO\tubes\TaleSwipe_BE\demo\target\classes;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.5.0\spring-boot-starter-data-jpa-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter\3.5.0\spring-boot-starter-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.5.0\spring-boot-starter-logging-3.5.0.jar;C:\Users\IRHAM\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\IRHAM\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\IRHAM\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\IRHAM\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\IRHAM\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\IRHAM\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\IRHAM\.m2\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.0\spring-boot-starter-jdbc-3.5.0.jar;C:\Users\IRHAM\.m2\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-jdbc\6.2.7\spring-jdbc-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\hibernate\orm\hibernate-core\6.6.15.Final\hibernate-core-6.6.15.Final.jar;C:\Users\IRHAM\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\IRHAM\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\IRHAM\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\IRHAM\.m2\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Users\IRHAM\.m2\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\IRHAM\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\Users\IRHAM\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\IRHAM\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\IRHAM\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\IRHAM\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\IRHAM\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\IRHAM\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\IRHAM\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\data\spring-data-jpa\3.5.0\spring-data-jpa-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\data\spring-data-commons\3.5.0\spring-data-commons-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-orm\6.2.7\spring-orm-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-context\6.2.7\spring-context-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-tx\6.2.7\spring-tx-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-beans\6.2.7\spring-beans-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-aspects\6.2.7\spring-aspects-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\aspectj\aspectjweaver\1.9.24\aspectjweaver-1.9.24.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.5.0\spring-boot-starter-thymeleaf-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.3.RELEASE\thymeleaf-spring6-3.1.3.RELEASE.jar;C:\Users\IRHAM\.m2\repository\org\thymeleaf\thymeleaf\3.1.3.RELEASE\thymeleaf-3.1.3.RELEASE.jar;C:\Users\IRHAM\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\IRHAM\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.5.0\spring-boot-starter-security-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-aop\6.2.7\spring-aop-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-config\6.5.0\spring-security-config-6.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-web\6.5.0\spring-security-web-6.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-expression\6.2.7\spring-expression-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.5.0\spring-boot-starter-validation-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.41\tomcat-embed-el-10.1.41.jar;C:\Users\IRHAM\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.2.Final\hibernate-validator-8.0.2.Final.jar;C:\Users\IRHAM\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.5.0\spring-boot-starter-web-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.5.0\spring-boot-starter-json-3.5.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.19.0\jackson-datatype-jdk8-2.19.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.19.0\jackson-datatype-jsr310-2.19.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.19.0\jackson-module-parameter-names-2.19.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.0\spring-boot-starter-tomcat-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.41\tomcat-embed-core-10.1.41.jar;C:\Users\IRHAM\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.41\tomcat-embed-websocket-10.1.41.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-web\6.2.7\spring-web-6.2.7.jar;C:\Users\IRHAM\.m2\repository\io\micrometer\micrometer-observation\1.15.0\micrometer-observation-1.15.0.jar;C:\Users\IRHAM\.m2\repository\io\micrometer\micrometer-commons\1.15.0\micrometer-commons-1.15.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-webmvc\6.2.7\spring-webmvc-6.2.7.jar;C:\Users\IRHAM\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\IRHAM\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\IRHAM\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.0\jackson-databind-2.19.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.0\jackson-annotations-2.19.0.jar;C:\Users\IRHAM\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.0\jackson-core-2.19.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-devtools\3.5.0\spring-boot-devtools-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot\3.5.0\spring-boot-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.0\spring-boot-autoconfigure-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\postgresql\postgresql\42.7.5\postgresql-42.7.5.jar;C:\Users\IRHAM\.m2\repository\org\checkerframework\checker-qual\3.48.3\checker-qual-3.48.3.jar;C:\Users\IRHAM\.m2\repository\org\projectlombok\lombok\1.18.38\lombok-1.18.38.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.5.0\spring-boot-starter-test-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-test\3.5.0\spring-boot-test-3.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.0\spring-boot-test-autoconfigure-3.5.0.jar;C:\Users\IRHAM\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\IRHAM\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\IRHAM\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\IRHAM\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\IRHAM\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\IRHAM\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\IRHAM\.m2\repository\org\assertj\assertj-core\3.27.3\assertj-core-3.27.3.jar;C:\Users\IRHAM\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\IRHAM\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\IRHAM\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\IRHAM\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\IRHAM\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\IRHAM\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\IRHAM\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\IRHAM\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\IRHAM\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\IRHAM\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Users\IRHAM\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Users\IRHAM\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.5\byte-buddy-agent-1.17.5.jar;C:\Users\IRHAM\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\IRHAM\.m2\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Users\IRHAM\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\IRHAM\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-core\6.2.7\spring-core-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-jcl\6.2.7\spring-jcl-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\springframework\spring-test\6.2.7\spring-test-6.2.7.jar;C:\Users\IRHAM\.m2\repository\org\xmlunit\xmlunit-core\2.10.1\xmlunit-core-2.10.1.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-test\6.5.0\spring-security-test-6.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-core\6.5.0\spring-security-core-6.5.0.jar;C:\Users\IRHAM\.m2\repository\org\springframework\security\spring-security-crypto\6.5.0\spring-security-crypto-6.5.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\IRHAM"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\kuliah\semester 4\PBO\tubes\TaleSwipe_BE\demo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\IRHAM\AppData\Local\Temp\surefire9942462447523452072\surefirebooter-20250615063249334_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.2+7-58"/>
+    <property name="user.name" value="IRHAM"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\IRHAM\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\IRHAM\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="D:\kuliah\semester 4\PBO\tubes\TaleSwipe_BE\demo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="44932"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\app\IRHAM\product\23ai\dbhomeFree\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Go\bin;C:\Program Files\nodejs\;C:\Program Files\CMake\bin;C:\Program Files\Apache\Maven\apache-maven-3.9.9\bin;C:\Users\IRHAM\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\IRHAM\AppData\Local\Programs\Python\Python313\;C:\Users\IRHAM\AppData\Local\Programs\Python\Launcher\;C:\Users\IRHAM\AppData\Local\Microsoft\WindowsApps;C:\Users\IRHAM\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\IRHAM\AppData\Local\GitHubDesktop\bin;C:\Users\IRHAM\go\bin;C:\Users\IRHAM\AppData\Roaming\npm;C:\Users\IRHAM\AppData\Local\Programs\cursor\resources\app\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.2+7-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[taleswipe] "/>
+  </properties>
+  <testcase name="contextLoads" classname="com.PBO.TaleSwipe.DemoApplicationTests" time="0.374">
+    <system-out><![CDATA[06:32:50.303 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.PBO.TaleSwipe.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+06:32:50.450 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.PBO.TaleSwipe.TaleswipeApplication for test class com.PBO.TaleSwipe.DemoApplicationTests
+06:32:50.653 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.0)
+
+2025-06-15T06:32:51.020+07:00  INFO 44932 --- [taleswipe] [           main] com.PBO.TaleSwipe.DemoApplicationTests   : Starting DemoApplicationTests using Java 23.0.2 with PID 44932 (started by IRHAM in D:\kuliah\semester 4\PBO\tubes\TaleSwipe_BE\demo)
+2025-06-15T06:32:51.021+07:00  INFO 44932 --- [taleswipe] [           main] com.PBO.TaleSwipe.DemoApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-06-15T06:32:51.060+07:00 DEBUG 44932 --- [taleswipe] [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@680362a
+2025-06-15T06:32:51.991+07:00  INFO 44932 --- [taleswipe] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-15T06:32:52.086+07:00  INFO 44932 --- [taleswipe] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+2025-06-15T06:32:52.851+07:00  INFO 44932 --- [taleswipe] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-15T06:32:53.025+07:00  INFO 44932 --- [taleswipe] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-15T06:32:53.080+07:00  INFO 44932 --- [taleswipe] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-15T06:32:53.481+07:00  INFO 44932 --- [taleswipe] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-15T06:32:53.514+07:00  INFO 44932 --- [taleswipe] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-15T06:32:53.718+07:00  INFO 44932 --- [taleswipe] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a520f05
+2025-06-15T06:32:53.720+07:00  INFO 44932 --- [taleswipe] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-15T06:32:53.754+07:00  WARN 44932 --- [taleswipe] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-15T06:32:53.780+07:00  INFO 44932 --- [taleswipe] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-15T06:32:54.913+07:00  INFO 44932 --- [taleswipe] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-15T06:32:54.926+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    set client_min_messages = WARNING
+Hibernate: 
+    set client_min_messages = WARNING
+2025-06-15T06:32:54.929+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists comments 
+       drop constraint if exists FK7h839m3lkvhbyv3bcdv7sm4fj
+Hibernate: 
+    alter table if exists comments 
+       drop constraint if exists FK7h839m3lkvhbyv3bcdv7sm4fj
+2025-06-15T06:32:54.931+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists comments 
+       drop constraint if exists FKmb9bc55qru1mpcrpqducqc7c
+Hibernate: 
+    alter table if exists comments 
+       drop constraint if exists FKmb9bc55qru1mpcrpqducqc7c
+2025-06-15T06:32:54.932+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists comments 
+       drop constraint if exists FK8omq0tc18jd43bu5tjh6jvraq
+Hibernate: 
+    alter table if exists comments 
+       drop constraint if exists FK8omq0tc18jd43bu5tjh6jvraq
+2025-06-15T06:32:54.933+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists pages 
+       drop constraint if exists FKefri28o4xrb1uj1ermdq5w8pv
+Hibernate: 
+    alter table if exists pages 
+       drop constraint if exists FKefri28o4xrb1uj1ermdq5w8pv
+2025-06-15T06:32:54.935+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists reports 
+       drop constraint if exists FKgs3miqdd5ftfsqcg0nxp205ko
+Hibernate: 
+    alter table if exists reports 
+       drop constraint if exists FKgs3miqdd5ftfsqcg0nxp205ko
+2025-06-15T06:32:54.936+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists reports 
+       drop constraint if exists FKaf5vwr2r9722vw8buhtjmf3do
+Hibernate: 
+    alter table if exists reports 
+       drop constraint if exists FKaf5vwr2r9722vw8buhtjmf3do
+2025-06-15T06:32:54.938+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists stories 
+       drop constraint if exists FKa4ak6n0w5tjjxht2tky5iovmc
+Hibernate: 
+    alter table if exists stories 
+       drop constraint if exists FKa4ak6n0w5tjjxht2tky5iovmc
+2025-06-15T06:32:54.938+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists story_genres 
+       drop constraint if exists FKfdr4gxll84en8qba999025rc9
+Hibernate: 
+    alter table if exists story_genres 
+       drop constraint if exists FKfdr4gxll84en8qba999025rc9
+2025-06-15T06:32:54.939+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists story_likes 
+       drop constraint if exists FKi57lrgupecmycbkveelx0bltu
+Hibernate: 
+    alter table if exists story_likes 
+       drop constraint if exists FKi57lrgupecmycbkveelx0bltu
+2025-06-15T06:32:54.940+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists story_likes 
+       drop constraint if exists FKo2p5ura3qbwbn1lb46om8en1w
+Hibernate: 
+    alter table if exists story_likes 
+       drop constraint if exists FKo2p5ura3qbwbn1lb46om8en1w
+2025-06-15T06:32:54.941+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists user_genres 
+       drop constraint if exists FKmwqpompk5ps1c2gi0569f8mle
+Hibernate: 
+    alter table if exists user_genres 
+       drop constraint if exists FKmwqpompk5ps1c2gi0569f8mle
+2025-06-15T06:32:54.942+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists user_story_interactions 
+       drop constraint if exists FK5wbwy245xbjwpqx90sqykvsv4
+Hibernate: 
+    alter table if exists user_story_interactions 
+       drop constraint if exists FK5wbwy245xbjwpqx90sqykvsv4
+2025-06-15T06:32:54.943+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists user_story_interactions 
+       drop constraint if exists FK5hjqqu68h98pm4w66cdn4fira
+Hibernate: 
+    alter table if exists user_story_interactions 
+       drop constraint if exists FK5hjqqu68h98pm4w66cdn4fira
+2025-06-15T06:32:54.944+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    drop table if exists comments cascade
+Hibernate: 
+    drop table if exists comments cascade
+2025-06-15T06:32:54.947+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    drop table if exists pages cascade
+Hibernate: 
+    drop table if exists pages cascade
+2025-06-15T06:32:54.950+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    drop table if exists reports cascade
+Hibernate: 
+    drop table if exists reports cascade
+2025-06-15T06:32:54.953+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    drop table if exists stories cascade
+Hibernate: 
+    drop table if exists stories cascade
+2025-06-15T06:32:54.955+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    drop table if exists story_genres cascade
+Hibernate: 
+    drop table if exists story_genres cascade
+2025-06-15T06:32:54.956+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    drop table if exists story_likes cascade
+Hibernate: 
+    drop table if exists story_likes cascade
+2025-06-15T06:32:54.959+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    drop table if exists user_genres cascade
+Hibernate: 
+    drop table if exists user_genres cascade
+2025-06-15T06:32:54.961+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    drop table if exists user_story_interactions cascade
+Hibernate: 
+    drop table if exists user_story_interactions cascade
+2025-06-15T06:32:54.962+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    drop table if exists users cascade
+Hibernate: 
+    drop table if exists users cascade
+2025-06-15T06:32:54.970+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    create table comments (
+        user_id uuid not null,
+        comment_id varchar(255) not null,
+        comment_text TEXT not null,
+        parent_comment_id varchar(255),
+        story_id varchar(255) not null,
+        primary key (comment_id)
+    )
+Hibernate: 
+    create table comments (
+        user_id uuid not null,
+        comment_id varchar(255) not null,
+        comment_text TEXT not null,
+        parent_comment_id varchar(255),
+        story_id varchar(255) not null,
+        primary key (comment_id)
+    )
+2025-06-15T06:32:54.981+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    create table pages (
+        page_number integer not null,
+        content TEXT not null,
+        page_id varchar(255) not null,
+        story_id varchar(255) not null,
+        primary key (page_id)
+    )
+Hibernate: 
+    create table pages (
+        page_number integer not null,
+        content TEXT not null,
+        page_id varchar(255) not null,
+        story_id varchar(255) not null,
+        primary key (page_id)
+    )
+2025-06-15T06:32:54.985+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    create table reports (
+        sender_id uuid not null,
+        content_id varchar(255) not null,
+        jenis_laporan varchar(255) not null,
+        report_id varchar(255) not null,
+        report_text TEXT not null,
+        primary key (report_id)
+    )
+Hibernate: 
+    create table reports (
+        sender_id uuid not null,
+        content_id varchar(255) not null,
+        jenis_laporan varchar(255) not null,
+        report_id varchar(255) not null,
+        report_text TEXT not null,
+        primary key (report_id)
+    )
+2025-06-15T06:32:54.988+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    create table stories (
+        author_id uuid not null,
+        description varchar(255) not null,
+        story_id varchar(255) not null,
+        title varchar(255) not null,
+        primary key (story_id)
+    )
+Hibernate: 
+    create table stories (
+        author_id uuid not null,
+        description varchar(255) not null,
+        story_id varchar(255) not null,
+        title varchar(255) not null,
+        primary key (story_id)
+    )
+2025-06-15T06:32:54.992+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    create table story_genres (
+        genre varchar(255),
+        story_id varchar(255) not null
+    )
+Hibernate: 
+    create table story_genres (
+        genre varchar(255),
+        story_id varchar(255) not null
+    )
+2025-06-15T06:32:54.996+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    create table story_likes (
+        id bigint generated by default as identity,
+        user_id uuid,
+        story_story_id varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table story_likes (
+        id bigint generated by default as identity,
+        user_id uuid,
+        story_story_id varchar(255),
+        primary key (id)
+    )
+2025-06-15T06:32:55.000+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    create table user_genres (
+        user_id uuid not null,
+        genre varchar(255)
+    )
+Hibernate: 
+    create table user_genres (
+        user_id uuid not null,
+        genre varchar(255)
+    )
+2025-06-15T06:32:55.001+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    create table user_story_interactions (
+        bookmarked boolean not null,
+        liked boolean not null,
+        interacted_at timestamp(6),
+        read_duration bigint not null,
+        id uuid not null,
+        user_id uuid not null,
+        story_id varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table user_story_interactions (
+        bookmarked boolean not null,
+        liked boolean not null,
+        interacted_at timestamp(6),
+        read_duration bigint not null,
+        id uuid not null,
+        user_id uuid not null,
+        story_id varchar(255) not null,
+        primary key (id)
+    )
+2025-06-15T06:32:55.004+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    create table users (
+        id uuid not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        password varchar(255) not null,
+        profile_picture varchar(255),
+        role varchar(255) check (role in ('USER','ADMIN')),
+        username varchar(255) not null unique,
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        id uuid not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        password varchar(255) not null,
+        profile_picture varchar(255),
+        role varchar(255) check (role in ('USER','ADMIN')),
+        username varchar(255) not null unique,
+        primary key (id)
+    )
+2025-06-15T06:32:55.009+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists comments 
+       add constraint FK7h839m3lkvhbyv3bcdv7sm4fj 
+       foreign key (parent_comment_id) 
+       references comments
+Hibernate: 
+    alter table if exists comments 
+       add constraint FK7h839m3lkvhbyv3bcdv7sm4fj 
+       foreign key (parent_comment_id) 
+       references comments
+2025-06-15T06:32:55.012+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists comments 
+       add constraint FKmb9bc55qru1mpcrpqducqc7c 
+       foreign key (story_id) 
+       references stories
+Hibernate: 
+    alter table if exists comments 
+       add constraint FKmb9bc55qru1mpcrpqducqc7c 
+       foreign key (story_id) 
+       references stories
+2025-06-15T06:32:55.014+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists comments 
+       add constraint FK8omq0tc18jd43bu5tjh6jvraq 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists comments 
+       add constraint FK8omq0tc18jd43bu5tjh6jvraq 
+       foreign key (user_id) 
+       references users
+2025-06-15T06:32:55.016+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists pages 
+       add constraint FKefri28o4xrb1uj1ermdq5w8pv 
+       foreign key (story_id) 
+       references stories
+Hibernate: 
+    alter table if exists pages 
+       add constraint FKefri28o4xrb1uj1ermdq5w8pv 
+       foreign key (story_id) 
+       references stories
+2025-06-15T06:32:55.018+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists reports 
+       add constraint FKgs3miqdd5ftfsqcg0nxp205ko 
+       foreign key (content_id) 
+       references stories
+Hibernate: 
+    alter table if exists reports 
+       add constraint FKgs3miqdd5ftfsqcg0nxp205ko 
+       foreign key (content_id) 
+       references stories
+2025-06-15T06:32:55.019+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists reports 
+       add constraint FKaf5vwr2r9722vw8buhtjmf3do 
+       foreign key (sender_id) 
+       references users
+Hibernate: 
+    alter table if exists reports 
+       add constraint FKaf5vwr2r9722vw8buhtjmf3do 
+       foreign key (sender_id) 
+       references users
+2025-06-15T06:32:55.021+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists stories 
+       add constraint FKa4ak6n0w5tjjxht2tky5iovmc 
+       foreign key (author_id) 
+       references users
+Hibernate: 
+    alter table if exists stories 
+       add constraint FKa4ak6n0w5tjjxht2tky5iovmc 
+       foreign key (author_id) 
+       references users
+2025-06-15T06:32:55.022+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists story_genres 
+       add constraint FKfdr4gxll84en8qba999025rc9 
+       foreign key (story_id) 
+       references stories
+Hibernate: 
+    alter table if exists story_genres 
+       add constraint FKfdr4gxll84en8qba999025rc9 
+       foreign key (story_id) 
+       references stories
+2025-06-15T06:32:55.024+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists story_likes 
+       add constraint FKi57lrgupecmycbkveelx0bltu 
+       foreign key (story_story_id) 
+       references stories
+Hibernate: 
+    alter table if exists story_likes 
+       add constraint FKi57lrgupecmycbkveelx0bltu 
+       foreign key (story_story_id) 
+       references stories
+2025-06-15T06:32:55.026+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists story_likes 
+       add constraint FKo2p5ura3qbwbn1lb46om8en1w 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists story_likes 
+       add constraint FKo2p5ura3qbwbn1lb46om8en1w 
+       foreign key (user_id) 
+       references users
+2025-06-15T06:32:55.027+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists user_genres 
+       add constraint FKmwqpompk5ps1c2gi0569f8mle 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists user_genres 
+       add constraint FKmwqpompk5ps1c2gi0569f8mle 
+       foreign key (user_id) 
+       references users
+2025-06-15T06:32:55.029+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists user_story_interactions 
+       add constraint FK5wbwy245xbjwpqx90sqykvsv4 
+       foreign key (story_id) 
+       references stories
+Hibernate: 
+    alter table if exists user_story_interactions 
+       add constraint FK5wbwy245xbjwpqx90sqykvsv4 
+       foreign key (story_id) 
+       references stories
+2025-06-15T06:32:55.033+07:00 DEBUG 44932 --- [taleswipe] [           main] org.hibernate.SQL                        : 
+    alter table if exists user_story_interactions 
+       add constraint FK5hjqqu68h98pm4w66cdn4fira 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists user_story_interactions 
+       add constraint FK5hjqqu68h98pm4w66cdn4fira 
+       foreign key (user_id) 
+       references users
+2025-06-15T06:32:55.040+07:00  INFO 44932 --- [taleswipe] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-15T06:32:55.526+07:00  INFO 44932 --- [taleswipe] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-15T06:32:56.312+07:00  INFO 44932 --- [taleswipe] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-15T06:32:56.383+07:00  WARN 44932 --- [taleswipe] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-15T06:32:56.438+07:00  INFO 44932 --- [taleswipe] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-06-15T06:32:56.558+07:00 DEBUG 44932 --- [taleswipe] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 34 mappings in 'requestMappingHandlerMapping'
+2025-06-15T06:32:56.761+07:00 DEBUG 44932 --- [taleswipe] [           main] o.s.w.s.c.annotation.WebMvcConfigurer    : Default resource handling disabled
+2025-06-15T06:32:56.771+07:00 DEBUG 44932 --- [taleswipe] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-06-15T06:32:57.211+07:00 DEBUG 44932 --- [taleswipe] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-15T06:32:57.267+07:00  WARN 44932 --- [taleswipe] [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-06-15T06:32:57.294+07:00 DEBUG 44932 --- [taleswipe] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-15T06:32:57.419+07:00  INFO 44932 --- [taleswipe] [           main] com.PBO.TaleSwipe.DemoApplicationTests   : Started DemoApplicationTests in 6.779 seconds (process running for 7.952)
+]]></system-out>
+    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\IRHAM\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.5\byte-buddy-agent-1.17.5.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>
