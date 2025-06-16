@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register Test</title>
+</head>
+
+<body>
+    <h1>Register Test</h1>
+    <button onclick="testRegister()">Kirim Request</button>
+
+    <script>
+        function testRegister() {
+            fetch("http://localhost:8080/api/users/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    username: "irhamHTML",
+                    name: "Irham",
+                    email: "irham@html.com",
+                    password: "secret123",
+                    tanggalLahir: "2002-04-10",
+                    preferensiGenre: ["Fantasi", "Drama"]
+                })
+            })
+                .then(res => res.json())
+                .then(data => console.log("RESPONS:", data))
+                .catch(err => console.error("ERROR:", err));
+        }
+    </script>
+</body>
+
+</html>

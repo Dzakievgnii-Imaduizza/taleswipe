@@ -1,18 +1,28 @@
-package com.pbo.taleswipe.model;
+package com.PBO.TaleSwipe.model;
 
-import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import java.util.Collection;
+import java.util.List;
+import java.util.UUID;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.UUID;
+import jakarta.persistence.CollectionTable;
+import jakarta.persistence.Column;
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
@@ -21,47 +31,40 @@ import java.util.UUID;
 @Entity
 @Table(name = "users")
 public class User implements UserDetails {
+
+    @Column(name = "profile_picture")
+    private String profilePicture;
+
+
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
     @Column(unique = true, nullable = false)
     private String username;
 
     @Column(nullable = false)
-    private String name;
-
-    @Column(nullable = false)
     private String password;
 
-    @Column(name = "tanggal_lahir")
-    private String tanggalLahir;
-
-    @Column(unique = true)
+    @Column(nullable = false)
     private String email;
 
+    @Column(nullable = false)
+    private String name;
+
     @Enumerated(EnumType.STRING)
-    private UserRole role;
+    private Role role;
 
     @ElementCollection
-    private List<String> preferensiGenre = new ArrayList<>();
+    @CollectionTable(name = "user_genres", joinColumns = @JoinColumn(name = "user_id"))
+    @Column(name = "genre")
+    private List<String> preferredGenres;
 
-    @ManyToMany
-    @JoinTable(
-        name = "user_followers",
-        joinColumns = @JoinColumn(name = "user_id"),
-        inverseJoinColumns = @JoinColumn(name = "follower_id")
-    )
-    private List<User> followers = new ArrayList<>();
-
-    @ManyToMany(mappedBy = "followers")
-    private List<User> following = new ArrayList<>();
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("ROLE_" + role.name()));
     }
-
     @Override
     public boolean isAccountNonExpired() {
         return true;
@@ -81,14 +84,4 @@ public class User implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
-
-    @Override
-    public String getUsername() {
-        return username;
-    }
-
-    @Override
-    public String getPassword() {
-        return password;
-    }
-} 
+}

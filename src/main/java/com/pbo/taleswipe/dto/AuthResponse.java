@@ -1,4 +1,4 @@
-package com.pbo.taleswipe.dto;
+package com.PBO.TaleSwipe.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

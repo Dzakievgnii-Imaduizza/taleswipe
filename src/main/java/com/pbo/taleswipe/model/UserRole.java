@@ -1,4 +1,4 @@
-package com.pbo.taleswipe.model;
+package com.PBO.TaleSwipe.model;
 
 public enum UserRole {
     USER,

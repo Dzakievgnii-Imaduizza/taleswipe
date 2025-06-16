@@ -1,10 +1,10 @@
-package com.pbo.taleswipe;
+package com.PBO.TaleSwipe;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TaleswipeApplicationTests {
+class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
