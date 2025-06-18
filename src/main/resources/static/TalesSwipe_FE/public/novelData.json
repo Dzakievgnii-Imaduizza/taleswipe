@@ -1,0 +1,162 @@
+{
+    "novels": [
+        {
+            "id": 1,
+            "title": "Langit Jingga",
+            "cover": "/cover1.png",
+            "description": "Sebuah kisah tentang perjalanan seorang pemuda mencari arti kehidupan di tengah hiruk-pikuk kota metropolitan.",
+            "pages": [
+                "Halaman 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+                "Halaman 2: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...",
+                "... (8 halaman lainnya dengan sekitar 300 kata per halaman)"
+            ],
+            "author": {
+                "name": "Ayu Lestari",
+                "avatar": "/avatar1.png",
+                "bio": "Penulis muda yang gemar mengeksplorasi tema-tema kehidupan urban dan dinamika sosial.",
+                "followers": 213
+            },
+            "reactions": {
+                "likes": 120,
+                "bookmarks": 45
+            },
+            "comments": [
+                {
+                    "user": "Budi",
+                    "text": "Ceritanya sangat menyentuh dan relevan dengan kehidupan sehari-hari."
+                },
+                {
+                    "user": "Siti",
+                    "text": "Menarik! Tidak sabar untuk membaca kelanjutannya."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Jejak Sang Petualang",
+            "cover": "/cover2.jpg",
+            "description": "Petualangan seru seorang penjelajah yang menembus hutan belantara demi menemukan artefak kuno.",
+            "pages": [
+                "Halaman 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+                "Halaman 2: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...",
+                "... (8 halaman lainnya dengan sekitar 300 kata per halaman)"
+            ],
+            "author": {
+                "name": "Raka Pratama",
+                "avatar": "/avatar2.png",
+                "bio": "Penulis petualangan yang telah menjelajahi berbagai belahan dunia untuk inspirasi tulisannya.",
+                "followers": 178
+            },
+            "reactions": {
+                "likes": 200,
+                "bookmarks": 80
+            },
+            "comments": [
+                {
+                    "user": "Andi",
+                    "text": "Membaca ini seperti ikut berpetualang langsung!"
+                },
+                {
+                    "user": "Dewi",
+                    "text": "Deskripsi tempatnya sangat detail, saya bisa membayangkannya."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Cinta di Ujung Senja",
+            "cover": "/cover3.jpg",
+            "description": "Kisah romantis dua insan yang dipertemukan oleh takdir di tepi pantai saat matahari terbenam.",
+            "pages": [
+                "Halaman 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+                "Halaman 2: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...",
+                "... (8 halaman lainnya dengan sekitar 300 kata per halaman)"
+            ],
+            "author": {
+                "name": "Larasati",
+                "avatar": "/avatar3.png",
+                "bio": "Penulis novel romantis yang karyanya selalu berhasil menyentuh hati pembaca.",
+                "followers": 312
+            },
+            "reactions": {
+                "likes": 350,
+                "bookmarks": 150
+            },
+            "comments": [
+                {
+                    "user": "Rina",
+                    "text": "Cerita yang sangat mengharukan, saya sampai meneteskan air mata."
+                },
+                {
+                    "user": "Agus",
+                    "text": "Romantis banget! Cocok dibaca saat santai."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Misteri Rumah Tua",
+            "cover": "/cover4.jpg",
+            "description": "Sekelompok remaja mencoba mengungkap misteri di balik rumah tua yang konon berhantu.",
+            "pages": [
+                "Halaman 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+                "Halaman 2: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...",
+                "... (8 halaman lainnya dengan sekitar 300 kata per halaman)"
+            ],
+            "author": {
+                "name": "Dimas Saputra",
+                "avatar": "/avatar4.png",
+                "bio": "Penulis cerita misteri yang selalu berhasil membuat pembaca penasaran hingga akhir.",
+                "followers": 500
+            },
+            "reactions": {
+                "likes": 180,
+                "bookmarks": 70
+            },
+            "comments": [
+                {
+                    "user": "Tina",
+                    "text": "Serem tapi bikin nagih! Ceritanya keren banget."
+                },
+                {
+                    "user": "Rafi",
+                    "text": "Plot twist-nya nggak ketebak, mantap!"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Perjalanan Tak Terduga",
+            "cover": "/cover5.jpg",
+            "description": "Seorang wanita menemukan jati dirinya melalui perjalanan keliling dunia yang penuh kejutan.",
+            "pages": [
+                "Halaman 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+                "Halaman 2: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...",
+                "Halaman 3: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...",
+                "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                " dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ],
+            "author": {
+                "name": "Sari Dewi",
+                "avatar": "/avatar5.png",
+                "bio": "Penulis inspiratif yang karyanya banyak mengangkat tema pemberdayaan diri dan petualangan.",
+                "followers": 89
+            },
+            "reactions": {
+                "likes": 220,
+                "bookmarks": 95
+            },
+            "comments": [
+                {
+                    "user": "Lina",
+                    "text": "Sangat menginspirasi! Membuat saya ingin menjelajah dunia."
+                },
+                {
+                    "user": "Bambang",
+                    "text": "Ceritanya penuh motivasi dan semangat."
+                }
+            ]
+        }
+    ]
+}
