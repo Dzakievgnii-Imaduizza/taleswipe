@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -45,18 +44,12 @@ public class SecurityConfig {
                     "/api/users/register",
                     "/api/users/preferences",
                     "/api/users/preferences/**",
-                    "/uploads/**"
+                    "/uploads/**",       // <---- INI PENTING!!
+                    "/api/feed", "/api/feed/**",
+                    "/favicon.ico",
+                    "/static/**"
                 ).permitAll()
-                .requestMatchers(HttpMethod.POST, "/api/stories/**").hasAnyRole("USER", "AUTHOR")
-                .requestMatchers(HttpMethod.GET, "/api/stories/**").hasAnyRole("USER", "AUTHOR")
-                .requestMatchers(HttpMethod.PUT, "/api/stories/**").hasAnyRole("USER", "AUTHOR")
-                .requestMatchers(HttpMethod.POST, "/api/users/**").hasAnyRole("USER", "AUTHOR")
-                .requestMatchers(HttpMethod.GET, "/api/users/**").hasAnyRole("USER", "AUTHOR")
-                .requestMatchers(HttpMethod.PUT, "/api/users/**").hasAnyRole("USER", "AUTHOR")
-                .requestMatchers(HttpMethod.POST, "/api/comments/**").hasAnyRole("USER", "AUTHOR")
-                .requestMatchers(HttpMethod.GET, "/api/comments/**").hasAnyRole("USER", "AUTHOR")
-                .requestMatchers(HttpMethod.POST, "/api/feed/**").hasAnyRole("USER", "AUTHOR")
-                .requestMatchers(HttpMethod.GET, "/api/feed/**").hasAnyRole("USER", "AUTHOR")
+                // Hapus/ubah semua .requestMatchers(HttpMethod.GET, "/api/users/**") dsb jika perlu test static file dulu.
                 .anyRequest().authenticated()
             )
             .userDetailsService(customUserDetailsService)

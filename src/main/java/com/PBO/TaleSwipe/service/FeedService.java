@@ -8,6 +8,7 @@ import com.PBO.TaleSwipe.dto.StoryResponse;
 public interface FeedService {
 
     List<StoryResponse> getRecommendedFeed(String username);
+    List<StoryResponse> getFeed(int offset, int limit);
 
     void recordInteraction(String username, StoryInteractionRequest request);
 }

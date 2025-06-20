@@ -28,7 +28,7 @@ export default function Profile() {
     const [loading, setLoading] = useState(false);
     const [followers, setFollowers] = useState(0);
     const [following, setFollowing] = useState(0);
-    const [followingAuthors, setFollowingAuthors] = useState([]); // <-- ADD THIS
+    const [followingAuthors, setFollowingAuthors] = useState([]);
     const [likes, setLikes] = useState(0);
     const [novels, setNovels] = useState([]);
     const [selectedNovelId, setSelectedNovelId] = useState(null);
@@ -172,7 +172,13 @@ export default function Profile() {
             alert('Error upload foto');
         }
     };
-    console.log(profileAvatar);
+
+    // --- Handle reel click: go to dashboard with params ---
+    const handleReelClick = (clickedStoryId) => {
+        const reelIds = novels.map(novel => novel.storyId || novel.id).join(',');
+        navigate(`/dashboard?reels=${reelIds}&current=${clickedStoryId}`);
+    };
+
     // --- Render
     return (
         <>
@@ -239,10 +245,6 @@ export default function Profile() {
                             <div>
                                 <p className="font-semibold">{formatNumber(following)}</p>
                                 <p className="text-gray-600">Following</p>
-                            </div>
-                            <div>
-                                <p className="font-semibold">1M</p>
-                                <p className="text-gray-600">Views</p>
                             </div>
                         </div>
 
@@ -312,13 +314,13 @@ export default function Profile() {
                             <p className="text-gray-400 italic py-10">Belum ada reels.</p>
                         ) : (
                             novels.map((reel) => (
-                                <div key={reel.storyId || reel.id} className="w-36 shrink-0 text-center">
+                                <div
+                                    key={reel.storyId || reel.id}
+                                    className="w-36 shrink-0 text-center cursor-pointer"
+                                    onClick={() => handleReelClick(reel.storyId || reel.id)}
+                                >
                                     <img src={`http://localhost:8080${reel.coverUrl}`} className="w-full h-60 object-cover rounded" alt={reel.title} />
                                     <h3 className="text-sm mt-2 font-semibold">{reel.title}</h3>
-                                    <div className="flex justify-center gap-3 text-xs text-gray-500 mt-1">
-                                        <span><FaEye className="inline mr-1" />{((reel.views ?? 12000) / 1000).toFixed(1)}k</span>
-                                        <span><FaHeart className="inline mr-1" />{((reel.likes ?? 3000) / 1000).toFixed(1)}k</span>
-                                    </div>
                                 </div>
                             ))
                         )}

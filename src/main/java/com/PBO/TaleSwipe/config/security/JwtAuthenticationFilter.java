@@ -37,17 +37,22 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         final String authHeader = request.getHeader("Authorization");
         final String uri = request.getRequestURI();
 
-        // Bypass untuk endpoint publik & preflight
-        if ("OPTIONS".equalsIgnoreCase(request.getMethod()) ||
-            uri.equals("/api/users/login") || uri.equals("/api/users/register")) {
-            filterChain.doFilter(request, response);
-            return;
-        }
+    if (
+        "OPTIONS".equalsIgnoreCase(request.getMethod()) ||
+        uri.startsWith("/uploads/") ||
+        uri.equals("/api/users/login") ||
+        uri.equals("/api/users/register")
+    ) {
+        filterChain.doFilter(request, response);
+        return;
+    }
 
-        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-            filterChain.doFilter(request, response);
-            return;
-        }
+    if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+        filterChain.doFilter(request, response);
+        return;
+    }
+
+
 
         final String jwt = authHeader.substring(7);
 

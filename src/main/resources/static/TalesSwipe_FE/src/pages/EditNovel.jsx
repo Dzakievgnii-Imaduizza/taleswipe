@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
-const GENRE_OPTIONS = ["Romance", "Fantasi", "Aksi", "Drama", "Horor"];
+const GENRE_OPTIONS = ["Romance", "Fantasy", "Action", "Drama", "Horror", "Historical", "Thriller", "Sciene Fition", "Slice of Life"];
 
 export default function EditNovel() {
     const { id } = useParams();

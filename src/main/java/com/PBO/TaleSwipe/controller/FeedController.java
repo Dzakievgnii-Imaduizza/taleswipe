@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.PBO.TaleSwipe.dto.StoryInteractionRequest;
@@ -28,9 +29,13 @@ public class FeedController {
     }
 
     @GetMapping
-    public ResponseEntity<List<StoryResponse>> getFeed() {
-        return ResponseEntity.ok(feedService.getRecommendedFeed(getUsername()));
+    public List<StoryResponse> getFeed(
+        @RequestParam(defaultValue = "0") int offset,
+        @RequestParam(defaultValue = "10") int limit) {
+        return feedService.getFeed(offset, limit);
     }
+
+
 
     @PostMapping("/interaction")
     public ResponseEntity<Void> recordInteraction(@RequestBody StoryInteractionRequest request) {

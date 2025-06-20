@@ -11,6 +11,7 @@ import com.PBO.TaleSwipe.model.User;
 
 @Repository
 public interface CommentRepository extends JpaRepository<Comment, String> {
+    List<Comment> findByStoryAndParentCommentIsNull(Story story);
     List<Comment> findByUser(User user);
     List<Comment> findByStory(Story story);
 } 

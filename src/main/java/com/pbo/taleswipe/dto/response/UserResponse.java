@@ -16,7 +16,12 @@ public class UserResponse {
     private String userId;
     private String fullname;
     private String email;
+    private String username;
     private String role;
     private String token;
-    private List<String> preferredGenres; // ✅ tambahkan ini
+    private List<String> preferredGenres; // tambah ini jika ingin field bio
+    private int followerCount; // tambah ini
+    private boolean followedByCurrentUser; // tambah ini
+    private int followingCount;
+    private int totalLikes;
 }

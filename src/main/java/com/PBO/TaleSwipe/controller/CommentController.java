@@ -23,6 +23,28 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class CommentController {
     private final CommentService commentService;
+    // Like
+    @PostMapping("/{commentId}/like")
+    public ResponseEntity<Void> likeComment(@PathVariable String commentId, Authentication auth) {
+        commentService.likeComment(commentId, auth.getName());
+        return ResponseEntity.ok().build();
+    }
+
+    // Unlike
+    @DeleteMapping("/{commentId}/like")
+    public ResponseEntity<Void> unlikeComment(@PathVariable String commentId, Authentication auth) {
+        commentService.unlikeComment(commentId, auth.getName());
+        return ResponseEntity.ok().build();
+    }
+
+    // Nested GET
+    @GetMapping("/story/{storyId}/nested")
+    public ResponseEntity<List<CommentResponse>> getCommentsByStoryNested(
+        @PathVariable String storyId,
+        Authentication auth) {
+        return ResponseEntity.ok(commentService.getCommentsByStoryNested(storyId, auth.getName()));
+    }
+
 
     @PostMapping
     public ResponseEntity<CommentResponse> createComment(
